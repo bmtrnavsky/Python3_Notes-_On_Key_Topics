@@ -26,3 +26,15 @@ print(4/2)
 print(2+3.0)
 print(2*3.0)
 print(2.0**3)
+
+# When working with large numbers you can add underscores to make them more readable
+universe_age = 14_000_000_000
+print(universe_age)
+
+# As long as you match the number of vartiables exactly you can assign more than one variable at a time like this:
+x, y, z, = 0, 0, 0
+
+# Python does not have a constant type but standard practice to set a constant that should not change is to use ALL_CAPS
+
+MAX_CONNECTIONS = 5000
+
