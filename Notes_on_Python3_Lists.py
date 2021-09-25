@@ -25,3 +25,26 @@ print(fruits[0].upper())
 print(f"I love {fruits[2]} I eat them all the time")
 
 # Most lists are dynamic meaning we will be adding or removing items as we work through a process. 
+
+# To change a element use the name of the list followed by its index
+
+fruits[1] = "pineapple"
+print(fruits)
+
+# You can add items to the end of a list using .append
+
+fruits.append("strawberry")
+print(fruits)
+
+# You can also start with a blank list example_lists[] then use a series of .appends to add to it. 
+
+cars = []
+cars.append("Porsche")
+cars.append("Audi")
+cars.append("Ford")
+print(cars)
+
+# You can add items to any location using .insert and the index location
+
+cars.insert(2, "BMW")
+print(cars)
