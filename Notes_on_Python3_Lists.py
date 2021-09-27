@@ -42,9 +42,46 @@ cars = []
 cars.append("Porsche")
 cars.append("Audi")
 cars.append("Ford")
+cars.append("Ferrari")
+cars.append("Volkswagen")
 print(cars)
 
 # You can add items to any location using .insert and the index location
 
 cars.insert(2, "BMW")
 print(cars)
+
+# Items can be permenantly removed from a list according to position using the delete statement
+
+del cars[-1]
+print(cars)
+
+# Items can also be removed and reused with a pop statement
+popped_cars = cars.pop()
+print(cars)
+print(popped_cars)
+
+# Items can also be removed by value bt using the remove statement. .remove only removes the forst occurance of a word. If you need all occurances removed you would need to do a loop to get them all. 
+
+cars.remove('Audi')
+print(cars)
+american_made = 'Ford'
+cars.remove(american_made)
+print(cars)
+print(f"\n {american_made} is made in America and not Europe")
+
+# You can permenantly sort a list with the sort method. .sort() sorts alphabetically .sort(reverse=True) sorts in reverse alphabetical order
+
+bikes = []
+bikes.append("Trek")
+bikes.append("Mongoose")
+bikes.append("GT")
+bikes.append("Cannondale")
+
+print(bikes)
+bikes.sort()
+print(bikes)
+bikes.sort(reverse=True)
+print(bikes)
+
+#Sorting lists temporarily using the sorted() function
