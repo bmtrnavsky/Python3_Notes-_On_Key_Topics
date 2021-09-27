@@ -84,4 +84,18 @@ print(bikes)
 bikes.sort(reverse=True)
 print(bikes)
 
-#Sorting lists temporarily using the sorted() function
+#Sorting lists temporarily using the sorted() function will preserve the order of the origional list. 
+
+print(f"Here is the origional list:\n {bikes}")
+print(f"here is the sorted list:\n {(sorted(bikes))}")
+print(f"Here is the origional list again:\n {bikes}")
+
+# How to reverse the order of a list. This is different because it doesnt sort it alphabetically it literally reverses the list. the reverse function is permenant, but it could easily be undone by running reverse on the list again. 
+
+print(bikes)
+bikes.reverse()
+print(bikes)
+
+# You can get the length of a list using the len function
+
+print(len(bikes))
